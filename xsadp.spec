@@ -17,8 +17,6 @@ BuildRequires:	ncurses-devel
 BuildRequires:	xforms-devel >= 0.88
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
-%define		_mandir		%{_prefix}/man
 
 %description
 SADP is and advanced CD player for Linux X11. Features: spectrum
