@@ -1,0 +1,87 @@
+diff -urN xsadp-3.1.5d.org/makefile.in xsadp-3.1.5d/makefile.in
+--- xsadp-3.1.5d.org/makefile.in	Sat Aug 24 15:11:21 2002
++++ xsadp-3.1.5d/makefile.in	Sat Aug 24 15:21:28 2002
+@@ -46,6 +46,7 @@
+ #-------------------------------------------------------------
+ # Compiler name and compilation flags
+ CC = @CC@ 
++CPPFLAGS = @CPPFLAGS@
+ CFLAGS = -Wall -ffast-math @CFLAGS@ @DEFS@ -I@x_includes@ 
+ 
+ 
+@@ -173,12 +174,12 @@
+ 	rm  -f  *.o .depend.* *.bak config.* sadp_autoconf.h makefile xsadp sadp 
+ 
+ install.xbin: xsadp moveold
+-	@INSTALL@ -d $(XBINDIR)
+-	@INSTALL@ -s xsadp $(XBINDIR)
++	@INSTALL@ -d $(DESTDIR)$(XBINDIR)
++	@INSTALL@ -s xsadp $(DESTDIR)$(XBINDIR)
+ 
+ install.bin: sadp moveold
+-	@INSTALL@ -d $(BINDIR)
+-	@INSTALL@ -s sadp $(BINDIR)
++	@INSTALL@ -d $(DESTDIR)$(BINDIR)
++	@INSTALL@ -s sadp $(DESTDIR)$(BINDIR)
+ 
+ ifndef ZIPPED_MAN
+ ifeq ($(shell echo /usr/man/man?/*.gz), /usr/man/man?/*.gz)
+@@ -189,41 +190,43 @@
+ endif
+ 
+ install.man:
+-	@INSTALL@ -d $(MANDIR)
++	@INSTALL@ -d $(DESTDIR)$(MANDIR)
+ ifeq ($(ZIPPED_MAN), 1)
+-	gzip -c sadp.1 > $(MANDIR)/sadp.1.gz
++	gzip -c sadp.1 > $(DESTDIR)$(MANDIR)/sadp.1.gz
+ else
+-	@INSTALL@ sadp.1 $(MANDIR)
++	@INSTALL@ sadp.1 $(DESTDIR)$(MANDIR)
+ endif
+ 
+ install.xman:
+-	@INSTALL@ -d $(XMANDIR)
++	@INSTALL@ -d $(DESTDIR)$(XMANDIR)
+ ifeq ($(ZIPPED_MAN), 1)
+-	gzip -c xsadp.1 > $(XMANDIR)/xsadp.1.gz
++	gzip -c xsadp.1 > $(DESTDIR)$(XMANDIR)/xsadp.1.gz
+ else
+-	@INSTALL@ xsadp.1 $(XMANDIR)
++	@INSTALL@ xsadp.1 $(DESTDIR)$(XMANDIR)
+ endif
+ 
+ install.res:
+-	@INSTALL@ -d $(XRESDIR)
++	@INSTALL@ -d $(DESTDIR)$(XRESDIR)
+ ifeq ($(USE_RPM), 0)
+-	cp -i -b XSadp.ad  $(XRESDIR)/XSadp
++	cp -i -b XSadp.ad  $(DESTDIR)$(XRESDIR)/XSadp
+ else
+-	@INSTALL@ -b  XSadp.ad  $(XRESDIR)/XSadp
++	@INSTALL@ -b  XSadp.ad  $(DESTDIR)$(XRESDIR)/XSadp
+ endif
+-	chmod  744  $(XRESDIR)/XSadp
++	chmod  744  $(DESTDIR)$(XRESDIR)/XSadp
+ 
+ install.icons:
+-	@INSTALL@ icons/*.xpm @x_includes@/X11/pixmaps
++	@INSTALL@ -d $(DESTDIR)@x_includes@/X11/pixmaps
++	@INSTALL@ icons/*.xpm $(DESTDIR)@x_includes@/X11/pixmaps
+ 
+ install.misc:
++	install  -m777 -d $(DESTDIR)/etc
+ ifeq ($(USE_RPM), 0)
+-	cp -i -b rcddb.sites  /etc
++	cp -i -b rcddb.sites  $(DESTDIR)/etc
+ else
+-	@INSTALL@ -b  rcddb.sites  /etc
++	@INSTALL@ -b  rcddb.sites  $(DESTDIR)/etc
+ endif
+-	chmod  744  /etc/rcddb.sites
+-	install  -m777 -d $(prefix)/share/sadp
++	chmod  744  $(DESTDIR)/etc/rcddb.sites
++	install  -m777 -d $(DESTDIR)$(prefix)/share/sadp
+ 
+ archive:
+ 	tar -czf xsadp-2.1.0.tar.gz *.c *.h *.xpm *.xbm *.1 makefile
