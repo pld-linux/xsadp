@@ -64,7 +64,6 @@ WindowMakerze.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 install -d $RPM_BUILD_ROOT{%{_pixmapsdir},%{_libdir}/X11/app-defaults}
 
 %{__make} install \
