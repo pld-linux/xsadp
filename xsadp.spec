@@ -6,6 +6,7 @@ Release:	3
 License:	custom
 Group:		Applications/Sound
 Source0:	http://www.geocities.com/xsadp/%{name}-%{version}.tar.gz
+# Source0-md5:	8036f5075919a18f52a9278596ed79aa
 Patch0:		%{name}-DESTDIR.patch
 URL:		http://www.alphalink.com.au/~michg/ace/sadp/
 BuildRequires:	XFree86-devel
