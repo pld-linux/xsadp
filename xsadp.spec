@@ -41,11 +41,11 @@ Available in console mode (ncurses 3+, 5.0 recommended) and GUI mode.
 SADP jest zaawansowan± odtwarzark± p³yt CD dla Linux X11. Jego zalety
 to analizator spektrum, oscyloskop, mikser, tryb mieszania (shuffle),
 wiele list odtwarzania oraz listy pomijania utworów. SADP zarz±dza
-lokaln± baz± oraz daje mo¿liwo¶c dostêpu do zdalnych baz danych o
+lokaln± baz± oraz daje mo¿liwo¶æ dostêpu do zdalnych baz danych o
 p³ytach CD poprzez Internet. Zalety w tym przypadku to: skompresowane,
 szybkie bazy danych, ustawienia preferencji, opcjonalne zapisywanie
 ustawieñ miksera dla ka¿dego dysku. SADP potrafi korzystaæ z baz
-danych Workmana oraz xmcd. Inne zalety SAPD to obs³uga CD-TEXT oraz
+danych Workmana oraz xmcd. Inne zalety SADP to obs³uga CD-TEXT oraz
 CD-Extra, obs³uga zmieniarek CD, interaktywna ikona oraz dokowanie w
 WindowMakerze.
 
