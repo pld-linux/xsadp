@@ -2,7 +2,7 @@ Summary:	Sing Along Disc Player
 Summary:	¦piewaj Sam - Odtwarzacz P³yt CD
 Name:		xsadp
 Version:	3.1.5d
-Release:	1
+Release:	2
 License:	custom
 Group:		Applications/Sound
 Source0:	http://www.geocities.com/xsadp/%{name}-%{version}.tar.gz
@@ -14,7 +14,7 @@ BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gpm-devel
 BuildRequires:	ncurses-devel
-BuildRequires:	xforms-devel >= 0.88
+BuildRequires:	xforms-devel >= 1.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
