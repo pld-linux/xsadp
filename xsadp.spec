@@ -3,17 +3,17 @@ Summary:	¦piewaj Sam - Odtwarzacz P³yt CD
 Name:		xsadp
 Version:	3.1.5d
 Release:	1
-Copyright:	custom
+License:	custom
 Group:		Applications/Sound
 Source0:	http://www.geocities.com/xsadp/%{name}-%{version}.tar.gz
 Patch0:		%{name}-DESTDIR.patch
 URL:		http://www.alphalink.com.au/~michg/ace/sadp/
-BuildRequires:	autoconf
-BuildRequires:	alsa-driver-devel
-BuildRequires:	ncurses-devel
-BuildRequires:	gpm-devel
-BuildRequires:	kernel-headers
 BuildRequires:	XFree86-devel
+BuildRequires:	alsa-driver-devel
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	gpm-devel
+BuildRequires:	ncurses-devel
 BuildRequires:	xforms-devel >= 0.88
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
