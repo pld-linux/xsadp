@@ -85,4 +85,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_pixmapsdir}/*
 %{_mandir}/man?/*
 %{_appdefsdir}/XSadp
-%config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/rcddb.sites
+%config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/rcddb.sites
