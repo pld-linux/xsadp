@@ -1,5 +1,5 @@
 Summary:	Sing Along Disc Player
-Summary:	如iewaj Sam - Odtwarzacz P造t CD
+Summary(pl):	如iewaj Sam - Odtwarzacz P造t CD
 Name:		xsadp
 Version:	3.1.5d
 Release:	5
