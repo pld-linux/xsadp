@@ -1,5 +1,5 @@
 Summary:	Sing Along Disc Player
-Summary(pl):	¦piewaj Sam - Odtwarzacz P³yt CD
+Summary(pl.UTF-8):   Åšpiewaj Sam - Odtwarzacz PÅ‚yt CD
 Name:		xsadp
 Version:	3.1.5d
 Release:	5
@@ -37,16 +37,16 @@ customized for a particular brand of CD through time-out options.
 Special support for SCSI CD ROM and IDE SCSI emulation is provided.
 Available in console mode (ncurses 3+, 5.0 recommended) and GUI mode.
 
-%description -l pl
-SADP jest zaawansowan± odtwarzark± p³yt CD dla Linux X11. Jego zalety
+%description -l pl.UTF-8
+SADP jest zaawansowanÄ… odtwarzarkÄ… pÅ‚yt CD dla Linux X11. Jego zalety
 to analizator spektrum, oscyloskop, mikser, tryb mieszania (shuffle),
-wiele list odtwarzania oraz listy pomijania utworów. SADP zarz±dza
-lokaln± baz± oraz daje mo¿liwo¶æ dostêpu do zdalnych baz danych o
-p³ytach CD poprzez Internet. Zalety w tym przypadku to: skompresowane,
+wiele list odtwarzania oraz listy pomijania utworÃ³w. SADP zarzÄ…dza
+lokalnÄ… bazÄ… oraz daje moÅ¼liwoÅ›Ä‡ dostÄ™pu do zdalnych baz danych o
+pÅ‚ytach CD poprzez Internet. Zalety w tym przypadku to: skompresowane,
 szybkie bazy danych, ustawienia preferencji, opcjonalne zapisywanie
-ustawieñ miksera dla ka¿dego dysku. SADP potrafi korzystaæ z baz
-danych Workmana oraz xmcd. Inne zalety SADP to obs³uga CD-TEXT oraz
-CD-Extra, obs³uga zmieniarek CD, interaktywna ikona oraz dokowanie w
+ustawieÅ„ miksera dla kaÅ¼dego dysku. SADP potrafi korzystaÄ‡ z baz
+danych Workmana oraz xmcd. Inne zalety SADP to obsÅ‚uga CD-TEXT oraz
+CD-Extra, obsÅ‚uga zmieniarek CD, interaktywna ikona oraz dokowanie w
 WindowMakerze.
 
 %prep
