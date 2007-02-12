@@ -1,5 +1,5 @@
 Summary:	Sing Along Disc Player
-Summary(pl.UTF-8):   Śpiewaj Sam - Odtwarzacz Płyt CD
+Summary(pl.UTF-8):	Śpiewaj Sam - Odtwarzacz Płyt CD
 Name:		xsadp
 Version:	3.1.5d
 Release:	5
